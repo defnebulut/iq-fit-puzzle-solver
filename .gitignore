@@ -1,0 +1,32 @@
+# PDF files
+*.pdf
+CSE5040_202451056012_FinalProject.pdf
+
+# Compiled binaries
+*.exe
+*.obj
+*.o
+
+# Specific executables
+vis
+iq_serial
+iq_mpi.exe
+serial/iq_serial
+mpi/iq_mpi.exe
+
+# Solution files
+solutions.txt
+solutions.idx
+solutions_*.txt
+
+# Build artifacts
+build/
+dist/
+
+# IDE files
+.vscode/
+.vs/
+
+# Temporary files
+*.tmp
+*.temp
