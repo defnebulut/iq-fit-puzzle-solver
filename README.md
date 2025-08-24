@@ -38,19 +38,19 @@ The solver uses an optimized backtracking algorithm with several key techniques:
 
 Based on experimental testing, the parallel implementation shows significant performance improvements:
 
-| Processes | Runtime (s) | Speedup | Efficiency | Cost     |
-| --------- | ----------- | ------- | ---------- | -------- |
-| Serial    | 729.70      | -       | -          | -        |
-| 2         | 438.03      | 1.67    | 0.83       | 876.06   |
-| 4         | 229.99      | 3.17    | 0.79       | 919.96   |
-| 8         | 157.81      | 4.62    | 0.58       | 1262.48  |
-| 16        | 136.31      | 5.35    | 0.33       | 2180.96  |
-| 32        | 108.75      | 6.71    | 0.21       | 3480.00  |
-| 64        | 100.63      | 7.25    | 0.11       | 6440.32  |
-| 128       | 98.24       | 7.43    | 0.06       | 12574.72 |
-| 256       | 93.32       | 7.82    | 0.03       | 23889.92 |
-| 512       | 88.40       | 8.25    | 0.02       | 45260.80 |
-| 1024      | 93.65       | 7.79    | 0.01       | 95897.60 |
+| Processes | Runtime (s) | Speedup | Efficiency |
+| --------- | ----------- | ------- | ---------- |
+| Serial    | 729.70      | -       | -          |
+| 2         | 438.03      | 1.67    | 0.83       |
+| 4         | 229.99      | 3.17    | 0.79       |
+| 8         | 157.81      | 4.62    | 0.58       |
+| 16        | 136.31      | 5.35    | 0.33       |
+| 32        | 108.75      | 6.71    | 0.21       |
+| 64        | 100.63      | 7.25    | 0.11       |
+| 128       | 98.24       | 7.43    | 0.06       |
+| 256       | 93.32       | 7.82    | 0.03       |
+| 512       | 88.40       | 8.25    | 0.02       |
+| 1024      | 93.65       | 7.79    | 0.01       |
 
 The parallel implementation achieves optimal speedup with 512 processes (8.25x speedup), though efficiency decreases as the number of processes increases due to communication overhead and diminishing returns from work distribution.
 
