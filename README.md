@@ -30,26 +30,9 @@ The solver uses an optimized backtracking algorithm with several key techniques:
 -  **Work distribution** - divides initial piece placements among processes
 -  **Independent search** - each process explores a subset of the search space
 
-## 📸 Sample Solution Outputs
-
-<table>
-<tr>
-<td width="50%">
-
-### Serial Version Output
+## 📸 Sample Solution Output
 
 <img src="./images/serial_vis.png" alt="Serial Solution Visualization" width="400">
-
-</td>
-<td width="50%">
-
-### MPI Parallel Version Output
-
-<img src="./images/mpi_vis.png" alt="MPI Solution Visualization" width="400">
-
-</td>
-</tr>
-</table>
 
 ## ⚡ Performance Results
 
